@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main(){
+int i,n,size;
+cout<<"Enter size of array";
+cin>>size;
+int a[size];
+cout<<"Enter array element"<<endl;
+for(i=0;i<size;i++){
+cin>>a[i];
+}
+cout<<"Searching Element"<<endl;
+cin>>n;
+for(i=0;i<size; i++){
+if(a[i]==n){
+cout<<"Element found at position"<<i<<endl;
+return 0;
+break;
+}
+}
+cout<<"Element not found";
+return 0;
+}
